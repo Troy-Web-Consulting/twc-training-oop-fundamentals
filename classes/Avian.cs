@@ -1,4 +1,5 @@
 using System;
+using twc_training_oop_fundamentals.enums;
 using twc_training_oop_fundamentals.interfaces;
 
 namespace twc_training_oop_fundamentals.classes
@@ -15,6 +16,7 @@ namespace twc_training_oop_fundamentals.classes
         public int Wingspan { get; set; }
 
         public string FeatherColor { get; set; }
+        public Gender Gender { get; set; }
 
         public virtual void Eat(string food)
         {
@@ -40,6 +42,11 @@ namespace twc_training_oop_fundamentals.classes
         public virtual void Walk()
         {
             Fly();
+        }
+        
+        public Avian(Gender gender)
+        {
+            this.Gender = gender;
         }
     }
 }

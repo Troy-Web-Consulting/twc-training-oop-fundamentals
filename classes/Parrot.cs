@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using twc_training_oop_fundamentals.enums;
 
 namespace twc_training_oop_fundamentals.classes
 {
     public class Parrot : Avian
     {
-        public Parrot(string name, string featherColor)
+        public Parrot(string name, string featherColor, Gender gender) : base(gender)
         {
             IsHumanFriendly = true;
             PhrasesHeard = new HashSet<string>();
@@ -46,7 +47,6 @@ namespace twc_training_oop_fundamentals.classes
             if (noiseToMake == 0)
             {
                 Console.WriteLine($"{Name} ruffles its feathers");
-
             }
             else if (noiseToMake == 1)
             {

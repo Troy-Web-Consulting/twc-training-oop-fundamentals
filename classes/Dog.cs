@@ -1,12 +1,12 @@
 using System;
+using twc_training_oop_fundamentals.enums;
 
 namespace twc_training_oop_fundamentals.classes
 {
     public class Dog : Mammal
     {
         // It already has all the properties from its parent class, Mammal
-
-        public Dog(string name, string breed, string favoriteFood)
+        public Dog(string name, string breed, string favoriteFood, Gender gender) : base(gender)
         {
             this.Name = name;
             this.Breed = breed;
@@ -18,12 +18,14 @@ namespace twc_training_oop_fundamentals.classes
 
         public override void Eat(string food)
         {
-            if (HungerLevel < 3)
+            if (HungerLevel > 3)
             {
+                // Eat like normal because dog is hungry
                 base.Eat(food);
             }
-            else if (HungerLevel < 5 && food == PreferedFood)
+            else if (HungerLevel <= 3 && HungerLevel > 0 && food == PreferedFood)
             {
+                // U
                 base.Eat(food);
                 Console.WriteLine($"{Name} looks a little sick from eating too much");
             }
