@@ -9,13 +9,13 @@ namespace twc_training_oop_fundamentals.classes
     {
         public Parrot(string name, string featherColor, Gender gender) : base(gender)
         {
-            IsHumanFriendly = true;
-            PhrasesHeard = new HashSet<string>();
+            this.IsHumanFriendly = true;
+            this.PhrasesHeard = new HashSet<string>();
             this.Name = name;
             this.PreferedFood = "seeds";
-            Wingspan = 12;
-            FeatherColor = featherColor;
-            TimesSpoken = 0;
+            this.Wingspan = 12;
+            this.FeatherColor = featherColor;
+            this.TimesSpoken = 0;
         }
 
         private ISet<string> PhrasesHeard { get; set; }
