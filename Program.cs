@@ -61,6 +61,11 @@ namespace ConsoleApplication
             polly.Speak();
             polly.Speak();
             polly.Speak();
+
+#if DEBUG
+            Console.WriteLine("Press enter to close...");
+            Console.ReadLine();
+#endif
         }
     }
 }
