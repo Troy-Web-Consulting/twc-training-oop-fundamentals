@@ -8,7 +8,7 @@ First, please clone the project with the `git clone https://github.com/xueye/twc
 
 You will need to install [.NET Core](https://www.microsoft.com/net/core) to run this project, however it will run on both Windows and Mac!
 
-You will also need to install the [.NET Core 1.1 SDK](https://go.microsoft.com/fwlink/?LinkID=835014) **after** that.
+If you are running on Windows, you will also need to install the [.NET Core 1.1 SDK](https://go.microsoft.com/fwlink/?LinkID=835014) **after** that.
 
 ### Windows Instructions (Visual Studio)
 1. After installing .NET Core, open Visual Studio
